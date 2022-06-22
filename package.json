@@ -1,0 +1,49 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "test": "mocha tests --reporter spec",
+    "ab.test": "cd ./tools/ApacheBench/ && ab.test.bat"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "awilix": "^7.0.3",
+    "awilix-express": "^7.0.0",
+    "awilix-router-core": "^1.6.1",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-bearer-token": "^2.4.0",
+    "glob": "^8.0.3",
+    "jsonwebtoken": "^8.5.1",
+    "jsrsasign": "^10.5.24",
+    "mongodb": "^4.7.0",
+    "mongoose": "^6.3.8",
+    "node-fetch": "^3.2.6",
+    "pino": "^8.0.0",
+    "spdy": "^4.0.2",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "eslint": "^8.17.0",
+    "eslint-config-google": "^0.14.0",
+    "mocha": "^10.0.0",
+    "nodemon": "^2.0.16",
+    "pino-pretty": "^8.0.0"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "src"
+    ],
+    "ignore": [],
+    "colours": true,
+    "verbose": false,
+    "delay": 50
+  }
+}
